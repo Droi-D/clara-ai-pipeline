@@ -1,0 +1,61 @@
+{
+  "account_id": "ACC_001",
+  "company_name": "CoolBreeze HVAC Services",
+  "business_hours": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "start": "7 AM",
+    "end": "5 PM",
+    "timezone": "Central Time"
+  },
+  "office_address": "482 Lakeview Industrial Drive, Suite 100, Austin, Texas 78701",
+  "services_supported": [
+    "Residential HVAC",
+    "Commercial HVAC",
+    "Installations",
+    "Repairs",
+    "Maintenance contracts",
+    "Emergency breakdowns"
+  ],
+  "emergency_definition": [
+    "System has completely failed",
+    "No heat or cooling",
+    "Refrigerant leak"
+  ],
+  "emergency_routing_rules": {
+    "contacts": [
+      {
+        "name": "Mike Pearson",
+        "phone": "512-555-0191"
+      },
+      {
+        "name": "Dave Huang",
+        "phone": "512-555-0204"
+      }
+    ],
+    "order": [
+      "Mike Pearson",
+      "Dave Huang"
+    ],
+    "fallback": "Someone will call back within 30 minutes"
+  },
+  "non_emergency_routing_rules": "Take a message and tell them we'll call back first thing the next business day",
+  "call_transfer_rules": {
+    "timeout_seconds": 25,
+    "retries": 2,
+    "fail_message": ""
+  },
+  "integration_constraints": [
+    "Do not log calls in ServiceTitan"
+  ],
+  "after_hours_flow_summary": "Emergency calls: try Mike Pearson, then Dave Huang. Non-emergency calls: take a message",
+  "office_hours_flow_summary": "",
+  "questions_or_unknowns": [],
+  "notes": "Always confirm customer's address for emergency calls",
+  "version": "v1"
+}

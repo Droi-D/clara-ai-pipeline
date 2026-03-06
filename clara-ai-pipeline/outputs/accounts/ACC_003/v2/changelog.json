@@ -1,0 +1,42 @@
+{
+  "account_id": "ACC_003",
+  "updated_at": "2026-03-06T10:36:46.381627Z",
+  "changes": [
+    {
+      "field": "office_address",
+      "old_value": "1120 Harbor View Road, San Diego, California 92101",
+      "new_value": "2450 Pacific Coast Highway, Suite 310, San Diego, California 92037",
+      "reason": "Office move"
+    },
+    {
+      "field": "emergency_routing_rules.contacts[1].name",
+      "old_value": "Fiona Marsh",
+      "new_value": "Luis Mendes",
+      "reason": "Fiona moved to a different role"
+    },
+    {
+      "field": "emergency_routing_rules.contacts[1].phone",
+      "old_value": "619-555-0156",
+      "new_value": "619-555-0178",
+      "reason": "Fiona moved to a different role"
+    },
+    {
+      "field": "emergency_routing_rules.order[1]",
+      "old_value": "Fiona Marsh",
+      "new_value": "Luis Mendes",
+      "reason": "Fiona moved to a different role"
+    },
+    {
+      "field": "emergency_routing_rules.fallback",
+      "old_value": "Assure the customer someone will be there by 9 AM",
+      "new_value": "a technician will contact you within two hours",
+      "reason": "Updated fallback message"
+    },
+    {
+      "field": "services_supported",
+      "old_value": "[\"Residential pest inspections\", \"Termite treatments\", \"Rodent removal\", \"Bee and wasp removal\", \"Commercial accounts\"]",
+      "new_value": "[\"Residential pest inspections\", \"Termite treatments\", \"Rodent removal\", \"Bee and wasp removal\", \"Commercial accounts\", \"Wildlife removal\"]",
+      "reason": "Added wildlife removal service"
+    }
+  ]
+}

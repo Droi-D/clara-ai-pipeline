@@ -1,0 +1,42 @@
+{
+  "account_id": "ACC_001",
+  "updated_at": "2026-03-06T10:36:17.245595Z",
+  "changes": [
+    {
+      "field": "business_hours.days",
+      "old_value": "[\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\"]",
+      "new_value": "[\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"]",
+      "reason": "Added Saturday morning hours"
+    },
+    {
+      "field": "business_hours.start",
+      "old_value": "7 AM",
+      "new_value": "8 AM",
+      "reason": "Updated Saturday morning start time"
+    },
+    {
+      "field": "business_hours.end",
+      "old_value": "5 PM",
+      "new_value": "12 PM",
+      "reason": "Updated Saturday morning end time"
+    },
+    {
+      "field": "emergency_routing_rules.contacts",
+      "old_value": "[{\"name\": \"Mike Pearson\", \"phone\": \"512-555-0191\"}, {\"name\": \"Dave Huang\", \"phone\": \"512-555-0204\"}]",
+      "new_value": "[{\"name\": \"Mike Pearson\", \"phone\": \"512-555-0191\"}, {\"name\": \"Rachel Torres\", \"phone\": \"512-555-0231\"}]",
+      "reason": "Replaced Dave Huang with Rachel Torres as secondary emergency contact"
+    },
+    {
+      "field": "emergency_routing_rules.order",
+      "old_value": "[\"Mike Pearson\", \"Dave Huang\"]",
+      "new_value": "[\"Mike Pearson\", \"Rachel Torres\"]",
+      "reason": "Updated emergency contact order to reflect new secondary contact"
+    },
+    {
+      "field": "emergency_routing_rules.fallback",
+      "old_value": "Someone will call back within 30 minutes",
+      "new_value": "Someone will call back within 20 minutes",
+      "reason": "Tightened SLA for fallback message"
+    }
+  ]
+}

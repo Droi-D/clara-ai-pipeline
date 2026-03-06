@@ -1,0 +1,65 @@
+{
+  "account_id": "ACC_004",
+  "company_name": "BrightSpark Electrical Contractors",
+  "business_hours": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "start": "7:00 AM",
+    "end": "6:00 PM",
+    "timezone": "Eastern"
+  },
+  "office_address": "330 East Maple Street, Columbus, Ohio 43215",
+  "services_supported": [
+    "Residential wiring",
+    "Panel upgrades",
+    "Commercial electrical inspections",
+    "EV charger installations",
+    "Lighting retrofits",
+    "Generator installation",
+    "Whole-home surge protection"
+  ],
+  "emergency_definition": [
+    "Power outages affecting the whole property",
+    "Exposed wiring or sparking outlets",
+    "Tripped breakers that won't reset"
+  ],
+  "emergency_routing_rules": {
+    "contacts": [
+      {
+        "name": "Gary Benson",
+        "phone": "614-555-0177"
+      },
+      {
+        "name": "Omar Khalid",
+        "phone": "614-555-0202"
+      }
+    ],
+    "order": [
+      "Gary Benson",
+      "Omar Khalid"
+    ],
+    "fallback": "Someone will call within 45 minutes"
+  },
+  "non_emergency_routing_rules": "Take the caller's name, number, and a brief description of the issue. We'll call back the next business day.",
+  "call_transfer_rules": {
+    "timeout_seconds": 30,
+    "retries": 2,
+    "fail_message": ""
+  },
+  "integration_constraints": [
+    "QuickBooks for invoicing"
+  ],
+  "after_hours_flow_summary": "Take the caller's name, number, and a brief description of the issue. We'll call back the next business day.",
+  "office_hours_flow_summary": "",
+  "questions_or_unknowns": [
+    "Commercial accounts: residential or commercial property"
+  ],
+  "notes": "For commercial accounts, ask whether it's a residential or commercial property upfront \u2014 it affects who we dispatch.",
+  "version": "v2"
+}

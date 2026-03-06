@@ -1,0 +1,42 @@
+{
+  "account_id": "ACC_004",
+  "updated_at": "2026-03-06T10:37:01.029655Z",
+  "changes": [
+    {
+      "field": "business_hours.start",
+      "old_value": "7:30 AM",
+      "new_value": "7:00 AM",
+      "reason": "Updated business hours"
+    },
+    {
+      "field": "business_hours.end",
+      "old_value": "4:30 PM",
+      "new_value": "6:00 PM",
+      "reason": "Updated business hours"
+    },
+    {
+      "field": "emergency_routing_rules.contacts[1].name",
+      "old_value": "Lisa Park",
+      "new_value": "Omar Khalid",
+      "reason": "Lisa Park went on extended leave, replaced by Omar Khalid"
+    },
+    {
+      "field": "emergency_routing_rules.contacts[1].phone",
+      "old_value": "614-555-0188",
+      "new_value": "614-555-0202",
+      "reason": "Updated phone number for new contact Omar Khalid"
+    },
+    {
+      "field": "emergency_routing_rules.order[1]",
+      "old_value": "Lisa Park",
+      "new_value": "Omar Khalid",
+      "reason": "Updated order to reflect new contact Omar Khalid"
+    },
+    {
+      "field": "services_supported",
+      "old_value": "[\"Residential wiring\", \"Panel upgrades\", \"Commercial electrical inspections\", \"EV charger installations\", \"Lighting retrofits\"]",
+      "new_value": "[\"Residential wiring\", \"Panel upgrades\", \"Commercial electrical inspections\", \"EV charger installations\", \"Lighting retrofits\", \"Generator installation\", \"Whole-home surge protection\"]",
+      "reason": "Added new services: generator installation and whole-home surge protection"
+    }
+  ]
+}

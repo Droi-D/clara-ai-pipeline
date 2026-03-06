@@ -1,0 +1,42 @@
+{
+  "account_id": "ACC_005",
+  "updated_at": "2026-03-06T10:37:16.112123Z",
+  "changes": [
+    {
+      "field": "business_hours.end",
+      "old_value": "8 PM",
+      "new_value": "24/7",
+      "reason": "Changed operating hours to 24/7"
+    },
+    {
+      "field": "emergency_routing_rules.contacts",
+      "old_value": "[{name: Brian Holt, phone: 720-555-0162}, {name: Jake Rivera, phone: 720-555-0174}]",
+      "new_value": "[{name: Brian Holt, phone: 720-555-0162}, {name: Maria Santos, phone: 720-555-0183}, {name: Jake Rivera, phone: 720-555-0174}]",
+      "reason": "Added Maria Santos as second contact, moved Jake Rivera to third"
+    },
+    {
+      "field": "emergency_routing_rules.order",
+      "old_value": "[Brian Holt, Jake Rivera]",
+      "new_value": "[Brian Holt, Maria Santos, Jake Rivera]",
+      "reason": "Updated contact order to reflect new emergency contacts"
+    },
+    {
+      "field": "call_transfer_rules.retries",
+      "old_value": "1",
+      "new_value": "2",
+      "reason": "Increased retries to 2 due to increased coverage"
+    },
+    {
+      "field": "after_hours_flow_summary",
+      "old_value": "leave a voicemail message with name and number and we'll call back when we're available",
+      "new_value": "",
+      "reason": "Removed after hours flow summary since they are now 24/7"
+    },
+    {
+      "field": "office_hours_flow_summary",
+      "old_value": "",
+      "new_value": "24/7 service, emergency routing logic for priority calls",
+      "reason": "Updated office hours flow summary to reflect 24/7 service"
+    }
+  ]
+}

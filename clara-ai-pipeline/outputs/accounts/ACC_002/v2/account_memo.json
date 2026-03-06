@@ -1,0 +1,65 @@
+{
+  "account_id": "ACC_002",
+  "company_name": "PipePro Plumbing LLC",
+  "business_hours": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "start": "noon",
+    "end": "5 PM",
+    "timezone": "Eastern"
+  },
+  "office_address": "77 Commerce Boulevard, Newark, New Jersey 07102",
+  "services_supported": [
+    "new customer inquiries",
+    "drain clogs",
+    "pipe bursts",
+    "water heater issues",
+    "sewer line inspection",
+    "gas line inspections",
+    "leak detection"
+  ],
+  "emergency_definition": [
+    "burst pipes",
+    "active flooding",
+    "sewage backup",
+    "no hot water if there are young kids or elderly in the home"
+  ],
+  "emergency_routing_rules": {
+    "contacts": [
+      {
+        "name": "Tom Keller",
+        "phone": "973-555-0187"
+      },
+      {
+        "name": "Derek Keller",
+        "phone": "973-555-0244"
+      }
+    ],
+    "order": [
+      "Tom Keller",
+      "Derek Keller"
+    ],
+    "fallback": "tell the customer we'll have someone out within the hour"
+  },
+  "non_emergency_routing_rules": "take a message, name and number, and we'll call back when we open",
+  "call_transfer_rules": {
+    "timeout_seconds": 30,
+    "retries": 2,
+    "fail_message": ""
+  },
+  "integration_constraints": [
+    "do not integrate with Jobber"
+  ],
+  "after_hours_flow_summary": "take a message for non-emergencies, route emergencies to Tom Keller or Raj Mehta",
+  "office_hours_flow_summary": "",
+  "questions_or_unknowns": [],
+  "notes": "use a greeting like 'Thank you for calling PipePro Plumbing, how can I help you today?'",
+  "version": "v2"
+}

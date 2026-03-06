@@ -1,0 +1,60 @@
+{
+  "account_id": "ACC_003",
+  "company_name": "ShieldGuard Pest Control",
+  "business_hours": {
+    "days": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "start": "8 AM",
+    "end": "5 PM",
+    "timezone": "Pacific"
+  },
+  "office_address": "2450 Pacific Coast Highway, Suite 310, San Diego, California 92037",
+  "services_supported": [
+    "Residential pest inspections",
+    "Termite treatments",
+    "Rodent removal",
+    "Bee and wasp removal",
+    "Commercial accounts",
+    "Wildlife removal"
+  ],
+  "emergency_definition": [
+    "Active bee or wasp swarms near an entrance or children's play area",
+    "Visible rodent entry into a food-service business"
+  ],
+  "emergency_routing_rules": {
+    "contacts": [
+      {
+        "name": "Carlos Vega",
+        "phone": "619-555-0133"
+      },
+      {
+        "name": "Luis Mendes",
+        "phone": "619-555-0178"
+      }
+    ],
+    "order": [
+      "Carlos Vega",
+      "Luis Mendes"
+    ],
+    "fallback": "a technician will contact you within two hours"
+  },
+  "non_emergency_routing_rules": "Standard message \u2014 we'll call back next business day",
+  "call_transfer_rules": {
+    "timeout_seconds": 20,
+    "retries": 2,
+    "fail_message": ""
+  },
+  "integration_constraints": [
+    "PestPac for scheduling"
+  ],
+  "after_hours_flow_summary": "Standard message \u2014 we'll call back next business day",
+  "office_hours_flow_summary": "",
+  "questions_or_unknowns": [],
+  "notes": "Professional but reassuring tone preferred. Address confirmation required for emergencies.",
+  "version": "v2"
+}

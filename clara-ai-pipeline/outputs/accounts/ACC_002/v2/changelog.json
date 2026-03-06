@@ -1,0 +1,48 @@
+{
+  "account_id": "ACC_002",
+  "updated_at": "2026-03-06T10:36:32.476954Z",
+  "changes": [
+    {
+      "field": "business_hours.days",
+      "old_value": "[\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"]",
+      "new_value": "[\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\", \"Sunday\"]",
+      "reason": "Added Sunday hours"
+    },
+    {
+      "field": "business_hours.start",
+      "old_value": "8 AM",
+      "new_value": "noon",
+      "reason": "Added Sunday hours with different start time"
+    },
+    {
+      "field": "business_hours.end",
+      "old_value": "6 PM",
+      "new_value": "5 PM",
+      "reason": "Added Sunday hours with different end time"
+    },
+    {
+      "field": "services_supported",
+      "old_value": "[\"new customer inquiries\", \"drain clogs\", \"pipe bursts\", \"water heater issues\", \"sewer line inspection\"]",
+      "new_value": "[\"new customer inquiries\", \"drain clogs\", \"pipe bursts\", \"water heater issues\", \"sewer line inspection\", \"gas line inspections\", \"leak detection\"]",
+      "reason": "Added gas line inspections and leak detection to services"
+    },
+    {
+      "field": "emergency_routing_rules.contacts",
+      "old_value": "[{\"name\": \"Tom Keller\", \"phone\": \"973-555-0187\"}, {\"name\": \"Raj Mehta\", \"phone\": \"973-555-0219\"}]",
+      "new_value": "[{\"name\": \"Tom Keller\", \"phone\": \"973-555-0187\"}, {\"name\": \"Derek Keller\", \"phone\": \"973-555-0244\"}]",
+      "reason": "Replaced Raj Mehta with Derek Keller as secondary contact"
+    },
+    {
+      "field": "emergency_routing_rules.order",
+      "old_value": "[\"Tom Keller\", \"Raj Mehta\"]",
+      "new_value": "[\"Tom Keller\", \"Derek Keller\"]",
+      "reason": "Replaced Raj Mehta with Derek Keller as secondary contact"
+    },
+    {
+      "field": "call_transfer_rules.retries",
+      "old_value": "1",
+      "new_value": "2",
+      "reason": "Increased retries from 1 to 2"
+    }
+  ]
+}

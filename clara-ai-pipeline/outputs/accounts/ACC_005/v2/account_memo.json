@@ -1,0 +1,66 @@
+{
+  "account_id": "ACC_005",
+  "company_name": "QuickKey Locksmith Services",
+  "business_hours": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "start": "8 AM",
+    "end": "24/7",
+    "timezone": "Mountain Time"
+  },
+  "office_address": "55 North Ridgeline Avenue, Denver, Colorado 80203",
+  "services_supported": [
+    "lockouts",
+    "rekeying",
+    "lock upgrades",
+    "safe cracking",
+    "master key systems"
+  ],
+  "emergency_definition": [
+    "lockout where someone's safety is at risk",
+    "break-in damage where a property is left unsecured"
+  ],
+  "emergency_routing_rules": {
+    "contacts": [
+      {
+        "name": "Brian Holt",
+        "phone": "720-555-0162"
+      },
+      {
+        "name": "Maria Santos",
+        "phone": "720-555-0183"
+      },
+      {
+        "name": "Jake Rivera",
+        "phone": "720-555-0174"
+      }
+    ],
+    "order": [
+      "Brian Holt",
+      "Maria Santos",
+      "Jake Rivera"
+    ],
+    "fallback": "tell them to stay safe and someone will call back within 15 minutes"
+  },
+  "non_emergency_routing_rules": "leave a voicemail message with name and number and we'll call back when we're available",
+  "call_transfer_rules": {
+    "timeout_seconds": 20,
+    "retries": 2,
+    "fail_message": ""
+  },
+  "integration_constraints": [
+    "basic Google Sheet for tracking"
+  ],
+  "after_hours_flow_summary": "",
+  "office_hours_flow_summary": "24/7 service, emergency routing logic for priority calls",
+  "questions_or_unknowns": [],
+  "notes": "always get the exact location for any lockout call \u2014 address or cross streets",
+  "version": "v2"
+}
